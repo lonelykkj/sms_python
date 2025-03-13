@@ -17,7 +17,7 @@ async def send_sms(to: str, body: str):
         message = client.messages.create(
             from_=PHONE_NUMBER,
             to='+5512982998077',
-            body='teste234'
+            body='Hello World!'
         )
         return {'status': 'success', 'message_sid': message.sid}
     except Exception as e:
